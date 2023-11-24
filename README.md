@@ -2,7 +2,7 @@
 
 # Sublime-Package
 
-**Sublime-Package** is a Sublime Text package **GENERATOR** for [yeoman](https://yeoman.io/), which creates scaffold for a sublime-package.
+**Sublime-Package** is a [Yeoman](https://yeoman.io/) **GENERATOR** for Sublime Text, which creates scaffold for a Sublime-Package.
 
 We are all lazy 🦥 and only want to code 👨‍💻 if it doesn't already exist. \
 So I created this yeoman generator to easily get a Scaffolding for a Sublime package.
