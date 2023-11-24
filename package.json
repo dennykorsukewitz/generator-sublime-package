@@ -1,6 +1,6 @@
 {
   "name": "generator-sublime-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sublime-Package is a Sublime Text package generator for yeoman, which creates scaffold for a sublime-package.",
   "homepage": "https://github.com/dennykorsukewitz/generator-sublime-package",
   "author": {
@@ -28,7 +28,8 @@
     "coverage": "jest --coverage --colors --verbose --forceExit --detectOpenHandles"
   },
   "files": [
-    "generators"
+    "generators",
+    "src"
   ],
   "main": "generators/index.js",
   "dependencies": {
