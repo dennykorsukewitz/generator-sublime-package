@@ -1,0 +1,58 @@
+---
+name: UnitTest
+
+on:
+  release:
+    types:
+      - published
+  push:
+    branches: ["dev", "dev-update", "private-dk-dev-init"]
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  ESLint:
+    name: ESLint
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install eslint
+      - name: Run ESLint
+        run: npm run lint
+
+  EJSlint:
+    name: EJSlint
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install -g ejs-lint
+      - name: Run EJSlint
+        run: npm run ejslint generators/
+
+  UnitTest-Jest:
+    name: UnitTest:Jest
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    needs: [
+      ESLint,
+      EJSlint,
+    ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Set git config
+        run: |
+          git config --global user.user "dennykorsukewitz"
+          git config --global user.name "Denny Korsukéwitz"
+          git config --global github.user "dennykorsukewitz"
+          git config --global github.name "Denny Korsukéwitz"
+      - name: Run jest with coverage
+        run: npm run coverage

@@ -1,0 +1,11 @@
+Changelog
+
+All notable changes to the "<%= package_name %>" package will be documented in this file.
+
+---
+
+Version 0.0.0
+
+Initial release of <%= package_name %> package.
+
+- ...

@@ -1,0 +1,13 @@
+Description:
+    Creates a Default.sublime-keymap file.
+    Default.sublime-keymap files contain a JSON array that contains JSON objects to specify the key bindings. The JSON objects must contain a keys and command key, and may also contain a args key if the command requires arguments.
+
+Example:
+    yo sublime-package:keymap
+
+    This will create:
+        Default.sublime-keymap:                  *.sublime-keymap files contain a JSON array that contains JSON objects to specify the key bindings.
+
+        Default (Linux).sublime-keymap
+        Default (OSX).sublime-keymap
+        Default (Windows).sublime-keymap

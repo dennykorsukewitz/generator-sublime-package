@@ -1,0 +1,10 @@
+{
+    // <%= package_name_pascal_case %> Settings
+    "information_messages": "true",
+    "list": [],
+    "data": {
+        "key": {
+            "value": true,
+        },
+    },
+}

@@ -1,0 +1,3 @@
+[
+    { "keys": ["<%= keymap_shortcut %>"], "command": "<%= keymap_command %>" },
+]

@@ -1,0 +1,19 @@
+[
+    {
+        // Right click on text field of any widget (i.e: search panel or output panel).
+
+        "caption": "<%= package_name %> - <%= menu_type %>",    // Text to display
+        "id": "<%= package_name %>",                            // ID
+        "mnemonic": "N",                                        // Accelerator key (i.e press "k" will trigger this caption)
+        "command": "new_file",                                  // Action to execute
+        // "checkbox":   true/false                             // Checkbox
+        // "children": [                                        // Sub-menu
+        //     {
+        //         "command": "new_file",
+        //         "caption": "New File",
+        //         "mnemonic": "N"
+        //     },
+        // ]
+    }
+]
+]

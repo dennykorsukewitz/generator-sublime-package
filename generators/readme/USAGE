@@ -1,0 +1,8 @@
+Description:
+    Creates README.md markdown file.
+
+Example:
+    yo sublime-package:readme
+
+    This will create:
+        readme.md:                  Description and minimal user instructions

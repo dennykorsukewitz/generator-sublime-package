@@ -1,0 +1,9 @@
+Description:
+    Creates a new python plugin.
+
+Example:
+    yo sublime-package:plugin
+
+    This will create:
+        SublimePackage.py:                   Default python template
+        SublimePackage.sublime-settings      Default sublime settings file

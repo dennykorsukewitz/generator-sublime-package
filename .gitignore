@@ -1,0 +1,5 @@
+node_modules
+coverage
+.yo-rc.json
+package-lock.json
+TODO.md

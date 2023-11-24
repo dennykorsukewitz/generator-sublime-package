@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<%= snippet_content %>
+]]></content>                                               <!-- Template of text to be inserted. -->
+    <tabTrigger><%= snippet_tab_trigger %></tabTrigger>     <!-- Optional: Press this sequence of keys then Tab to insert snippet. -->
+    <description><%= snippet_description %></description>   <!-- Optional: Description to display in Snippets menu. -->
+    <scope><%= snippet_scope %></scope>                     <!-- Optional: limit the use of snippet to certain scope [[Scope.txt]]. -->
+</snippet>

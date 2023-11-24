@@ -1,0 +1,13 @@
+🌟 Version 0.0.0 🌟
+
+Initial release of <%= package_name %> package.
+
+- ...
+
+GitHub link - https://github.com/<%= github_username %>/<%= package_name %>
+
+---
+
+Enjoy!
+
+Your [<%= github_fullname %>](https://github.com/<%= github_username %>) 🚀

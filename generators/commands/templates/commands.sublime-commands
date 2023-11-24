@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "<%= command_caption %>",
+        "command": "<%= command_name %>"
+    },
+]

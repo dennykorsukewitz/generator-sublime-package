@@ -1,0 +1,9 @@
+⭐ Congratulations ⭐
+
+<%= package_description %>
+
+-------------------
+
+🌟 Version 0.0.0 🌟 - Feature List
+
+- ...

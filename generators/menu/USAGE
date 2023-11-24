@@ -1,0 +1,19 @@
+Description:
+    Creates a *.sublime-menu file. Define Menubar and various right-click menus.
+    File name is significant because it determine which element (Menubar/statusbar/...) is affected.
+
+Example:
+    yo sublime-package:menu
+
+    This will create:
+        Context.sublime-menu                Right click on main buffer.
+        Encoding.sublime-menu               Left click on "Encoding" section in statusbar.
+        Find in Files.sublime-menu          Left click on "..." button on Where field of Find_in_files.
+        Indentation.sublime-menu            Left click on "Indentation" section in statusbar.
+        Line Endings.sublime-menu           Left click on "Line Ending" section in statusbar.
+        Main.sublime-menu                   Main Menu bar.
+        Side Bar.sublime-menu               Right click on items in Sidebar.
+        Syntax.sublime-menu                 Left click on current syntax section in statusbar e.g. 'Plain Text'.
+        Side Bar Mount Point.sublime-menu   Right click on main folders in Sidebar.
+        Tab Context.sublime-menu            Right click on Tab bar.
+        Widget Context.sublime-menu         Right click on text field of any widget (i.e: search panel or output panel).

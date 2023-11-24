@@ -1,0 +1,8 @@
+Description:
+    Creates a SublimePackage.sublime-commands file to register your new command / plugin for the Command Palette.
+
+Example:
+    yo sublime-package:commands
+
+    This will create:
+        SublimePackage.sublime-commands:                  File to register your new command / plugin for the Command Palette.

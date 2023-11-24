@@ -1,0 +1,21 @@
+Description:
+    Creates a Sublime-Package and starts all subgenerators.
+
+Example:
+    yo sublime-package
+    yo sublime-package --generators
+
+    This will create:
+        .gitattributes              default .gitattributes file
+        .gitignore                  default .gitignore file
+        messages/changelog.txt      default changelog.txt file
+        messages/install.txt        default install.txt file
+        messages/version.txt        default version.txt file
+        messages.json               default messages.json file
+
+    Variables:
+        sublime_version
+        package_name
+        package_description
+        github_username
+        github_fullname

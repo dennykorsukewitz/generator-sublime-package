@@ -1,0 +1,58 @@
+[
+    {
+        // Structure
+        //     caption:    Text to display
+        //     id:
+        //     mnemonic:   Accelerator key (i.e press "k" will trigger this caption)
+        //     command:    Action to execute
+        //     children:   Sub-menu
+        //     checkbox:   true/falseMain Menu bar.
+
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "<%= package_name %> - <%= menu_type %>",
+                        "children":
+                        [
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/<%= package_name %>/README.md"
+                                }
+                            },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/<%= package_name %>/<%= package_name %>.sublime-settings",
+                                    "default": "{\n$0\n}\n"
+                                },
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/<%= package_name %>/Default.sublime-keymap",
+                                    "default": "{\n$0\n}\n"
+                                },
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
