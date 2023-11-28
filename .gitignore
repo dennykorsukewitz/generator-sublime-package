@@ -3,3 +3,4 @@ coverage
 .yo-rc.json
 package-lock.json
 TODO.md
+*.tgz
