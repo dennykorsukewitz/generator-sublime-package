@@ -2,7 +2,7 @@
 
 # Sublime-Package
 
-**Sublime-Package** is a [Yeoman](https://yeoman.io/) **GENERATOR** for Sublime Text, which creates scaffold for a Sublime-Package.
+**Sublime-Package** is a [Yeoman](https://yeoman.io/) **GENERATOR**, which creates scaffolding for a Sublime-Packages.
 
 We are all lazy 🦥 and only want to code 👨‍💻 if it doesn't already exist. \
 So I created this yeoman generator to easily get a Scaffolding for a Sublime package.
@@ -10,13 +10,13 @@ So I created this yeoman generator to easily get a Scaffolding for a Sublime pac
 | Repository | GitHub | Npm |
 | ------ | ------ | ------ |
 | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dennykorsukewitz/generator-sublime-package) | ![GitHub open issues](https://img.shields.io/github/issues/dennykorsukewitz/generator-sublime-package) ![GitHub closed issues](https://img.shields.io/github/issues-closed/dennykorsukewitz/generator-sublime-package?color=#44CC44) | ![npm version](https://img.shields.io/npm/v/generator-sublime-package) |
-| ![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/generator-sublime-package) | ![GitHub pull requests](https://img.shields.io/github/issues-pr/dennykorsukewitz/generator-sublime-package?label=PR) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dennykorsukewitz/generator-sublime-package?color=g&label=PR) | ![npm bundle size](https://img.shields.io/bundlephobia/min/generator-sublime-package) ![npm collaborators](https://img.shields.io/npm/collaborators/generator-sublime-package) |
-| ![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/generator-sublime-package?style=flat&label=language)  | ![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/generator-sublime-package) | ![npm](https://img.shields.io/npm/dy/generator-sublime-package) ![npm](https://img.shields.io/npm/dm/generator-sublime-package)  |
-| ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/generator-sublime-package) | ![GitHub downloads](https://img.shields.io/github/downloads/dennykorsukewitz/generator-sublime-package/total?style=flat) | ![npm](https://img.shields.io/npm/dw/generator-sublime-package) ![npm](https://img.shields.io/npm/dt/generator-sublime-package) |
+| ![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/generator-sublime-package) | ![GitHub pull requests](https://img.shields.io/github/issues-pr/dennykorsukewitz/generator-sublime-package?label=PR) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dennykorsukewitz/generator-sublime-package?color=g&label=PR) | ![npm collaborators](https://img.shields.io/npm/collaborators/generator-sublime-package) |
+| ![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/generator-sublime-package?style=flat&label=language)  | ![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/generator-sublime-package) | ![npm](https://img.shields.io/npm/dt/generator-sublime-package) ![npm](https://img.shields.io/npm/dy/generator-sublime-package) |
+| ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/generator-sublime-package) | ![GitHub downloads](https://img.shields.io/github/downloads/dennykorsukewitz/generator-sublime-package/total?style=flat) | ![npm](https://img.shields.io/npm/dm/generator-sublime-package)  ![npm](https://img.shields.io/npm/dw/generator-sublime-package)  |
 
 | Status |
 | ------ |
-| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/generator-sublime-package/0.0.1/dev)](https://github.com/dennykorsukewitz/generator-sublime-package/compare/0.0.1...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/generator-sublime-package/0.0.3/dev)](https://github.com/dennykorsukewitz/generator-sublime-package/compare/0.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ---
 
@@ -59,15 +59,25 @@ The following files can be created.
 ## Usage
 
 ```bash
-# let the magic happen
+# Let the magic happen
 yo sublime-package
 
-# show all possible generators
+# Show all possible generators
 yo sublime-package --generators
 
-# run subgenerators directly
+# Run subgenerators directly
 yo sublime-package:SUBGENERATOR
+
+# Print the generator's options and usage
+yo sublime-package:SUBGENERATOR --help
+
+yo sublime-package:commands
+yo sublime-package:keymap
+yo sublime-package:menu
+yo sublime-package:plugin
 yo sublime-package:readme
+yo sublime-package:settings
+yo sublime-package:snippets
 ```
 
 ---
@@ -82,19 +92,14 @@ yo sublime-package:readme
 
 Install [Node](https://nodejs.org/en/download/)
 
-```bash
-# install node js via brew (if exists)
-brew install node
-```
-
 ### Yeoman
 
-`generator-sublime-package` uses the yeoman module to create that epic scaffold.
+`generator-sublime-package` uses the yeoman module to create that epic scaffolding.
 
 Install [Yeoman](http://yeoman.io)
 
 ```bash
-# install yeoman global
+# Install yeoman global
 npm install -g yo
 ```
 
@@ -105,7 +110,7 @@ npm install -g yo
 ### 1. Npm
 
 ```bash
-# install generator-sublime-package via npm
+# Install generator-sublime-package via npm
 npm install -g generator-sublime-package
 ```
 
@@ -114,7 +119,7 @@ npm install -g generator-sublime-package
 Clone the latest [dev branch](https://github.com/dennykorsukewitz/generator-sublime-package)
 
 ```bash
-# clone repository
+# Clone repository
 git clone git@github.com:dennykorsukewitz/generator-sublime-package.git
 cd generator-sublime-package
 ```
@@ -122,14 +127,14 @@ cd generator-sublime-package
 Check all node dependencies in package.json
 
 ```bash
-# run npm install to add all dependencies.
+# Run npm install to add all dependencies.
 npm install
 ```
 
 Run this link command in generator-sublime-package directory to link this generator to yeoman.
 
 ```bash
-# link local generator
+# Link local generator
 npm link ./
 ```
 
@@ -140,11 +145,11 @@ npm link ./
 ### Dependencies
 
 ```bash
-# install yeoman-test and yeoman-assert for jest tests
+# Install yeoman-test and yeoman-assert for jest tests
 npm install -g yeoman-test
 npm install -g yeoman-assert
 
-# install eslint and ejs-lint for linting
+# Install eslint and ejs-lint for linting
 npm install -g eslint
 npm install -g ejs-lint
 ```
