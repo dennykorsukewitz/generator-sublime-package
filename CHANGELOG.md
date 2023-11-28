@@ -2,6 +2,20 @@
 
 All notable changes to the "Subelime-Package" Generator will be documented in this file.
 
+## [0.0.3]
+
+### Maintenance
+
+Reduced npm dependencies.
+Updated README.
+
+## [0.0.2]
+
+### Maintenance
+
+Added src folder to npm module.
+Updated README.md.
+
 ## [0.0.1]
 
 ### Initial release of Subelime-Package Generator
