@@ -3,8 +3,8 @@ repository:
   name: generator-sublime-package
 
   # A short description of the repository that will show up on GitHub
-  description: Sublime-Package is a Yeoman GENERATOR for Sublime Text, which creates scaffold for a Sublime-Package.
-  
+  description: Sublime-Package is a Yeoman GENERATOR, which creates scaffolding for a Sublime-Packages.
+
   # A URL with more information about the repository
   homepage: https://dennykorsukewitz.github.io/generator-sublime-package/
 
