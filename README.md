@@ -59,6 +59,9 @@ The following files can be created.
 ## Usage
 
 ```bash
+# Create a new directory
+mkdir my-sublime-package && cd $_
+
 # Let the magic happen
 yo sublime-package
 
