@@ -9,7 +9,7 @@ repository:
   homepage: https://dennykorsukewitz.github.io/generator-sublime-package/
 
   # A comma-separated list of topics to set on the repository
-  topics: pages, npmjs, sublime, sublime-text, sublime-package, yeoman, yeoman-generator, workflow
+  topics: pages, metrics-npmjs, npmjs, sublime, sublime-text, sublime-package, yeoman, yeoman-generator, workflow
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
