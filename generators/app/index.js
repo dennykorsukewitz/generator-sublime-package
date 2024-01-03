@@ -13,6 +13,21 @@ const prompts = [];
 
 module.exports = class extends Generator {
 
+  // Arguments and options should be defined in the constructor.
+  constructor(args, opts) {
+    super(args, opts);
+
+    // This method adds support for a `--generator-description` flag
+    this.option('generator-description', {
+      type: Boolean,
+      description: 'Shows the description of each sub-generator.',
+      default: false,
+      alias: 'd',
+      hide: false,
+    });
+
+  }
+
   // initializing - Your initialization methods (checking current project state, getting configs, etc)
   async initializing() {
 

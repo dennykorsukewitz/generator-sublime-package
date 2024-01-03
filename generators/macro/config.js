@@ -1,6 +1,6 @@
 const config = {
   name: 'Macro',
-  description: 'Creates a Default.sublime-macro file. Macros are a basic automation facility comprising sequences of commands. Use them whenever you need to repeat the exact same steps to perform an operation.',
+  description: 'Creates a Default.sublime-macro file. Macros are a basic automation facility comprising sequences of commands.',
   priority: 60,
   versions: {
     '4.0.x': '',

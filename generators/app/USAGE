@@ -12,10 +12,3 @@ Example:
         messages/install.txt        default install.txt file
         messages/version.txt        default version.txt file
         messages.json               default messages.json file
-
-    Variables:
-        sublime_version
-        package_name
-        package_description
-        github_username
-        github_fullname

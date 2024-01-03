@@ -81,8 +81,13 @@ async function GetsupportedVersions(Generator, config) {
 
       const generator_name = generator_config.name || changeCase.capitalCase(generator);
 
+      let name = generator_name;
+      if (Generator.options['generator-description']) {
+        name = generator_name + ' \t - ' + generator_config.description;
+      }
+
       const generator_data = {
-        name:        generator_name + ' \t - ' + generator_config.description,
+        name:        name,
         description: generator_config.description,
         value:       generator,
         checked:     false,

@@ -1,6 +1,6 @@
 const config = {
   name: 'Mousemap',
-  description: 'Creates a Default.sublime-mousemap file. The mousemap files (which have the extension .sublime-mousemap) control what commands are executed when a user performs an action with a mouse, e.g. clicking a mouse button, scrolling the scroll wheel, etc.',
+  description: 'Creates a Default.sublime-mousemap file, which control what commands are executed when a user performs an action with a mouse.',
   priority: 80,
   versions: {
     '4.0.x': '',
