@@ -27,12 +27,12 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
 
           # Defaults to the user or organization that owns the workflow file
-          # scope: '@dennykorsukewitz'
+          scope: '@dennykorsukewitz'
       - name: npm install
         run: npm i
       - name: npm clean-install
         run: npm ci
-      - run: npm publish
+      - run: npm publish --registry=https://npm.pkg.github.com/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
