@@ -6,6 +6,6 @@ package.name = '@dennykorsukewitz/generator-sublime-package';
 
 // Update package.json with the updated name
 fs.writeFileSync(
-  path.join(__dirname, '../package.json'),
+  path.join(__dirname, '../../../package.json'),
   JSON.stringify(package, null, 2),
 );
