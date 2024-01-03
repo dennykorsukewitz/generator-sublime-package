@@ -49,11 +49,13 @@ jobs:
 
           # Defaults to the user or organization that owns the workflow file
           scope: '@dennykorsukewitz'
+      - name: Run github.js - Update package.json with the updated name
+        run: node .github/workflows/release/github.js
       - name: npm install
         run: npm i
       - name: npm clean-install
         run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.PAT }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
