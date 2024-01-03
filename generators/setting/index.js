@@ -5,7 +5,6 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const path = require('path');
-const changeCase = require('change-case');
 const helper = require('./../../src/helper.js');
 const generator = path.basename(__dirname);
 const generator_config = require('./config.js');
@@ -53,11 +52,10 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-    data.command_name = changeCase.snakeCase(data.command_name);
 
     this.renderTemplate(
-      this.templatePath('commands.sublime-commands'),
-      this.destinationPath(`${data.command_file_name}.sublime-commands`),
+      this.templatePath('settings.sublime-settings'),
+      this.destinationPath(`settings/${data.setting_file_name}.sublime-settings`),
       data,
     );
   }

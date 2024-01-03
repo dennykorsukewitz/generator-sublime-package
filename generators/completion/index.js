@@ -52,16 +52,11 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-    answers.menu_types.forEach(menu_type => {
-      data['menu_type'] = menu_type;
-
-      this.renderTemplate(
-        this.templatePath(`${menu_type}.sublime-menu`),
-        this.destinationPath(`menus/${menu_type}.sublime-menu`),
-        data,
-      );
-    });
-
+    this.renderTemplate(
+      this.templatePath('completions.sublime-completions'),
+      this.destinationPath(`completions/${data.completions_file_name}.sublime-completions`),
+      data,
+    );
   }
 
   // conflicts - Where conflicts are handled (used internally)

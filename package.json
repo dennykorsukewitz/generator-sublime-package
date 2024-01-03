@@ -1,6 +1,6 @@
 {
   "name": "generator-sublime-package",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sublime-Package is a Yeoman GENERATOR, which creates scaffolding for a Sublime-Packages.",
   "homepage": "https://github.com/dennykorsukewitz/generator-sublime-package",
   "author": {
@@ -16,14 +16,26 @@
   "keywords": [
     "sublime",
     "sublime-text",
+    "sublime-snippets",
+    "sublime-command",
+    "sublime-completion",
+    "sublime-keymap",
+    "sublime-macro",
+    "sublime-menu",
+    "sublime-mousemap",
+    "sublime-plugin",
+    "sublime-project",
+    "sublime-readme",
+    "sublime-setting",
+    "sublime-snippet",
     "sublime-package",
     "yeoman",
     "yeoman-generator"
   ],
   "scripts": {
     "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "ejslint": "ejslint ./generators/app/",
+    "lint-fix": "eslint . --fix && ejslint generators/",
+    "ejslint": "ejslint generators/",
     "test": "jest --colors",
     "coverage": "jest --coverage --colors --verbose --forceExit --no-cache"
   },

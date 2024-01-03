@@ -6,8 +6,8 @@ Example:
     yo sublime-package:keymap
 
     This will create:
-        Default.sublime-keymap:                  *.sublime-keymap files contain a JSON array that contains JSON objects to specify the key bindings.
+        keymaps/Default.sublime-keymap:                  *.sublime-keymap files contain a JSON array that contains JSON objects to specify the key bindings.
 
-        Default (Linux).sublime-keymap
-        Default (OSX).sublime-keymap
-        Default (Windows).sublime-keymap
+        keymaps/Default (Linux).sublime-keymap
+        keymaps/Default (OSX).sublime-keymap
+        keymaps/Default (Windows).sublime-keymap

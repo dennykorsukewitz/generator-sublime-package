@@ -56,14 +56,14 @@ module.exports = class extends Generator {
     data.command_name = changeCase.pascalCase(data.command_name);
     this.renderTemplate(
       this.templatePath('plugin.py'),
-      this.destinationPath(`${data.package_name_pascal_case}.py`),
+      this.destinationPath(`${data.command_name}.py`),
       data,
     );
 
     if (data.sublime_settings) {
       this.renderTemplate(
         this.templatePath('./../../settings/templates/settings.sublime-settings'),
-        this.destinationPath(`${data.package_name_pascal_case}.sublime-settings`),
+        this.destinationPath(`${data.command_name}.sublime-settings`),
         data,
       );
     }

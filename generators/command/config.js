@@ -1,7 +1,7 @@
 const config = {
-  name: 'Commands',
+  name: 'Command',
   description: 'Creates a SublimePackage.sublime-commands file to register your new command / plugin for the Command Palette.',
-  priority: 3,
+  priority: 30,
   versions: {
     '4.0.x': '',
   },

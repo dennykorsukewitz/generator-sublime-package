@@ -1,6 +1,22 @@
 # Changelog
 
-All notable changes to the "Subelime-Package" Generator will be documented in this file.
+All notable changes to the "Sublime-Package" Generator will be documented in this file.
+
+## [0.0.4]
+
+### Maintenance
+
+Fixed Snippet messages.
+Restructured package directories.
+Updated README.
+
+### New
+
+Added completion generator.
+Added macro generator.
+Added mousemap generator.
+Added project generator.
+Added UnitTests.
 
 ## [0.0.3]
 

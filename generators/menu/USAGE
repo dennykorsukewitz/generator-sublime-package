@@ -6,14 +6,14 @@ Example:
     yo sublime-package:menu
 
     This will create:
-        Context.sublime-menu                Right click on main buffer.
-        Encoding.sublime-menu               Left click on "Encoding" section in statusbar.
-        Find in Files.sublime-menu          Left click on "..." button on Where field of Find_in_files.
-        Indentation.sublime-menu            Left click on "Indentation" section in statusbar.
-        Line Endings.sublime-menu           Left click on "Line Ending" section in statusbar.
-        Main.sublime-menu                   Main Menu bar.
-        Side Bar.sublime-menu               Right click on items in Sidebar.
-        Syntax.sublime-menu                 Left click on current syntax section in statusbar e.g. 'Plain Text'.
-        Side Bar Mount Point.sublime-menu   Right click on main folders in Sidebar.
-        Tab Context.sublime-menu            Right click on Tab bar.
-        Widget Context.sublime-menu         Right click on text field of any widget (i.e: search panel or output panel).
+        menus/Context.sublime-menu                Right click on main buffer.
+        menus/Encoding.sublime-menu               Left click on "Encoding" section in statusbar.
+        menus/Find in Files.sublime-menu          Left click on "..." button on Where field of Find_in_files.
+        menus/Indentation.sublime-menu            Left click on "Indentation" section in statusbar.
+        menus/Line Endings.sublime-menu           Left click on "Line Ending" section in statusbar.
+        menus/Main.sublime-menu                   Main Menu bar.
+        menus/Side Bar.sublime-menu               Right click on items in Sidebar.
+        menus/Syntax.sublime-menu                 Left click on current syntax section in statusbar e.g. 'Plain Text'.
+        menus/Side Bar Mount Point.sublime-menu   Right click on main folders in Sidebar.
+        menus/Tab Context.sublime-menu            Right click on Tab bar.
+        menus/Widget Context.sublime-menu         Right click on text field of any widget (i.e: search panel or output panel).

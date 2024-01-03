@@ -23,7 +23,7 @@ describe('generators:app', () => {
       }
     });
 
-    it('runs correctly', () => {
+    it('expected files', () => {
       runResult.assertFile(expectedFiles);
     });
   });
@@ -34,11 +34,10 @@ describe('generators:app', () => {
     const config = {
       // generator_data
       sublime_version: '4.0.x',
-      package_name: 'My-Package',
+      package_name: 'Sublime-Package',
       package_description: 'My description.',
       github_username: 'dennykorsukewitz',
       github_fullname: 'Denny Korsukéwitz',
-      generators: '',
     };
 
     const expectedFiles = ['.gitignore'];
@@ -56,9 +55,10 @@ describe('generators:app', () => {
       }
     });
 
-    it('runs correctly', () => {
+    it('expected files', () => {
       runResult.assertFile(expectedFiles);
     });
+
   });
 });
 

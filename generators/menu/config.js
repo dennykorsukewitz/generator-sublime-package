@@ -1,7 +1,7 @@
 const config = {
   name: 'Menu',
   description: 'Creates a *.sublime-menu file. Define Menubar and various right-click menus. Creates a *.sublime-menu file.',
-  priority: 7,
+  priority: 70,
   versions: {
     '4.0.x': '',
   },

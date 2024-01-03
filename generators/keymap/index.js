@@ -55,7 +55,7 @@ module.exports = class extends Generator {
     answers.keymap_os.forEach(os => {
       this.renderTemplate(
         this.templatePath('Default.sublime-keymap'),
-        this.destinationPath(`${os}.sublime-keymap`),
+        this.destinationPath(`keymaps/${os}.sublime-keymap`),
         data,
       );
     });

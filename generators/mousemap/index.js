@@ -52,12 +52,10 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-    answers.menu_types.forEach(menu_type => {
-      data['menu_type'] = menu_type;
-
+    answers.mousemap_os.forEach(os => {
       this.renderTemplate(
-        this.templatePath(`${menu_type}.sublime-menu`),
-        this.destinationPath(`menus/${menu_type}.sublime-menu`),
+        this.templatePath('Default.sublime-mousemap'),
+        this.destinationPath(`mousemaps/${os}.sublime-mousemap`),
         data,
       );
     });

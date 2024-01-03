@@ -7,13 +7,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  Release:
+  Release-npm:
+    name: Release npm
     environment:
-      name: Release
+      name: Release npm
       url: "https://www.npmjs.com/package/generator-sublime-package"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
@@ -26,3 +28,31 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PAT }}
+
+  Release-GitHub:
+    name: Release GitHub
+    environment:
+      name: Release GitHub
+      url: "https://github.com/dennykorsukewitz?tab=packages&repo_name=generator-sublime-package"
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Setup .npmrc file to publish to GitHub Packages
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
+
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@dennykorsukewitz'
+      - name: npm install
+        run: npm i
+      - name: npm clean-install
+        run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PAT }}

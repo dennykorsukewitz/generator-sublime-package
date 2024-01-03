@@ -1,7 +1,7 @@
 const config = {
-  name: 'Settings',
+  name: 'Setting',
   description: 'Creates a SublimePackage.sublime-settings file to stores configuration data.',
-  priority: 5,
+  priority: 100,
   versions: {
     '4.0.x': '',
   },

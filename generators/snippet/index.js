@@ -54,7 +54,7 @@ module.exports = class extends Generator {
 
     this.renderTemplate(
       this.templatePath('snippet.sublime-snippet'),
-      this.destinationPath(`snipptes/${data.snippet_file_name}.sublime-snippet`),
+      this.destinationPath(`snippets/${data.snippet_file_name}.sublime-snippet`),
       data,
     );
   }

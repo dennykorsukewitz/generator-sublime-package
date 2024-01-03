@@ -5,6 +5,7 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const path = require('path');
+const changeCase = require('change-case');
 const helper = require('./../../src/helper.js');
 const generator = path.basename(__dirname);
 const generator_config = require('./config.js');
@@ -52,16 +53,13 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-    answers.menu_types.forEach(menu_type => {
-      data['menu_type'] = menu_type;
+    data.command_name = changeCase.snakeCase(data.command_name);
 
-      this.renderTemplate(
-        this.templatePath(`${menu_type}.sublime-menu`),
-        this.destinationPath(`menus/${menu_type}.sublime-menu`),
-        data,
-      );
-    });
-
+    this.renderTemplate(
+      this.templatePath('commands.sublime-commands'),
+      this.destinationPath(`commands/${data.command_file_name}.sublime-commands`),
+      data,
+    );
   }
 
   // conflicts - Where conflicts are handled (used internally)

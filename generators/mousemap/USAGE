@@ -1,0 +1,13 @@
+Description:
+    Creates a Default.sublime-mousemap file.
+    The mousemap files (which have the extension .sublime-mousemap) control what commands are executed when a user performs an action with a mouse, e.g. clicking a mouse button, scrolling the scroll wheel, etc.
+
+Example:
+    yo sublime-package:mousemap
+
+    This will create:
+        mousemaps/Default.sublime-mousemap:                  *.sublime-mousemap files contain a JSON array that contains JSON objects to specify the key bindings.
+
+        mousemaps/Default (Linux).sublime-mousemap
+        mousemaps/Default (OSX).sublime-mousemap
+        mousemaps/Default (Windows).sublime-mousemap

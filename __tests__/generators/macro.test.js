@@ -1,12 +1,15 @@
 const path = require('path');
 const helpers = require('yeoman-test');
 
-describe('generators:readme', () => {
+describe('generators:macro', () => {
   describe('creates files', () => {
     let runResult;
 
     const config = {
       // generator_data
+      macro_file_name: 'SublimePackage',
+
+      // package_data
       sublime_version: '4.0.x',
       package_name: 'Sublime-Package',
       package_description: 'My description.',
@@ -14,11 +17,17 @@ describe('generators:readme', () => {
       github_fullname: 'Denny Korsukéwitz',
     };
 
-    const expectedFiles = ['README.md'];
+    const expectedFiles = [
+      'macros/SublimePackage.sublime-macro',
+    ];
+
+    const expectedContent = [
+      [ 'macros/SublimePackage.sublime-macro', 'hardeol' ],
+    ];
 
     beforeEach(async () => {
       runResult = await helpers
-        .run(path.join(process.env.INIT_CWD, '/generators/readme'))
+        .run(path.join(process.env.INIT_CWD, '/generators/macro'))
         .withPrompts(config)
         .withLocalConfig(config);
     });
@@ -31,6 +40,10 @@ describe('generators:readme', () => {
 
     it('expected files', () => {
       runResult.assertFile(expectedFiles);
+    });
+
+    it('expected content', () => {
+      runResult.assertFileContent(expectedContent);
     });
 
   });

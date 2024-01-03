@@ -1,0 +1,8 @@
+Description:
+    Creates a SublimePackage.sublime-project file to register a collection of files and folders, which are shown in Sidebar.
+
+Example:
+    yo sublime-package:project
+
+    This will create:
+        projects/SublimePackage.sublime-project:                  File to register which files and folders are included.

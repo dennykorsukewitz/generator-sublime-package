@@ -1,0 +1,8 @@
+Description:
+    Creates a SublimePackage.sublime-settings file to stores configuration data.
+
+Example:
+    yo sublime-package:setting
+
+    This will create:
+        settings/SublimePackage.sublime-settings:                  Sublime Text stores configuration data in .sublime-settings files.

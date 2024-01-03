@@ -1,0 +1,12 @@
+Description:
+    Creates a Completions file.
+    The most basic form of adding completions to Sublime Text is by creating a .sublime-completions file. Completions files use the JSON format, and contain an object with the keys "scope" and "completions".
+
+    See: http://www.sublimetext.com/docs/completions.html#completion-files
+
+Example:
+    yo sublime-package:completion
+
+    This will create:
+        completions/SublimePackage.sublime-completions:                  Completion files are smart templates that will insert text for you, adapting it to their context.
+

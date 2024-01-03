@@ -52,10 +52,9 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-
     this.renderTemplate(
-      this.templatePath('settings.sublime-settings'),
-      this.destinationPath(`${data.setting_file_name}.sublime-settings`),
+      this.templatePath('macro.sublime-macro'),
+      this.destinationPath(`macros/${data.macro_file_name}.sublime-macro`),
       data,
     );
   }

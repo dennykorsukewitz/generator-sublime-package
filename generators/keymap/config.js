@@ -1,7 +1,7 @@
 const config = {
   name: 'Keymap',
   description: 'Creates a Default.sublime-keymap file. Default.sublime-keymap files contain the key bindings (shortcuts) for a command.',
-  priority: 4,
+  priority: 50,
   versions: {
     '4.0.x': '',
   },
@@ -16,7 +16,7 @@ const config = {
       name:    'keymap_command',
       message: 'What is the name of your command?',
       type:    'input',
-      default: '${config.package_name_pascal_case}',
+      default: '${config.package_name_snake_case}',
     },
     {
       name:    'keymap_os',

@@ -1,0 +1,8 @@
+Description:
+    Creates a Default.sublime-macro file. Macros are a basic automation facility comprising sequences of commands. Use them whenever you need to repeat the exact same steps to perform an operation.
+
+Example:
+    yo sublime-package:macro
+
+    This will create:
+        macros/SublimePackage.sublime-macro:                  Macro files are JSON files with the extension .sublime-macro.

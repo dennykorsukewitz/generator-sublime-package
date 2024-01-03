@@ -1,0 +1,42 @@
+{
+    "scope": "<%= completions_scope %>",
+    "completions": [
+        {
+            // The text the user must enter to match the completion.
+            "trigger": "<%= completions_trigger %>",
+
+            // The contents that will be inserted into the file. Supports snippet fields and variables.
+            "contents": "<%= completions_contents %>",
+
+            // The annotation to display for the completion.
+            "annotation": "<%= completions_annotation %>",
+
+            // The kind metadata for the completion.
+            // "ambiguous"  - a
+            // "function"   - f
+            // "keyword"    - k
+            // "markup"     - m
+            // "namespace"  - n
+            // "navigation" - n
+            // "snippet"    - s
+            // "type"       - t
+            // "variable"   - v
+
+            // "kind": "snippet",
+
+            // Your own kind
+            "kind": ["markup", "K", "<%= completions_kind %>"],
+
+            // A single line description of the completion. May contain the following HTML tags for basic formatting:
+            // <a href=""> – minihtml Protocols
+            // <b>
+            // <strong>
+            // <i>
+            // <em>
+            // <u>
+            // <tt>
+            // <code>
+            "details": "<%= completions_details %>"
+        }
+    ]
+}

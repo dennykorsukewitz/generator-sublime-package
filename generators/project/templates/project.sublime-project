@@ -1,0 +1,17 @@
+{
+    "folders":[
+        {
+            // "name": "Text to display on the side bar [optional]",
+            "path": "<%= project_path %>",
+
+            // "file_exclude_patterns":   ["*.doc", "*.docx"],  // optional
+            // "file_include_patterns":   ["*.json", "*.md"],   // optional
+            // "folder_exclude_patterns": ["backup"],           // optional
+            // "folder_include_patterns": ["test", "src"],      // optional
+            // "follow_symlinks":         true,                 // optional
+        },
+        {
+            "path": "<%= project_path %>",
+        },
+    ],
+}

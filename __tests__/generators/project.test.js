@@ -1,12 +1,16 @@
 const path = require('path');
 const helpers = require('yeoman-test');
 
-describe('generators:readme', () => {
+describe('generators:project', () => {
   describe('creates files', () => {
     let runResult;
 
     const config = {
       // generator_data
+      project_file_name: 'SublimePackage',
+      project_path: '/Users/dennykorsukewitz/workspace/sublime-package',
+
+      // package_data
       sublime_version: '4.0.x',
       package_name: 'Sublime-Package',
       package_description: 'My description.',
@@ -14,11 +18,18 @@ describe('generators:readme', () => {
       github_fullname: 'Denny Korsukéwitz',
     };
 
-    const expectedFiles = ['README.md'];
+    const expectedFiles = [
+      'projects/SublimePackage.sublime-project',
+    ];
+
+    const expectedContent = [
+      [ 'projects/SublimePackage.sublime-project', 'folders' ],
+      [ 'projects/SublimePackage.sublime-project', '/Users/dennykorsukewitz/workspace/sublime-package' ],
+    ];
 
     beforeEach(async () => {
       runResult = await helpers
-        .run(path.join(process.env.INIT_CWD, '/generators/readme'))
+        .run(path.join(process.env.INIT_CWD, '/generators/project'))
         .withPrompts(config)
         .withLocalConfig(config);
     });
@@ -31,6 +42,10 @@ describe('generators:readme', () => {
 
     it('expected files', () => {
       runResult.assertFile(expectedFiles);
+    });
+
+    it('expected content', () => {
+      runResult.assertFileContent(expectedContent);
     });
 
   });
