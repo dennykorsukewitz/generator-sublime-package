@@ -27,7 +27,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
 
           # Defaults to the user or organization that owns the workflow file
-          scope: '@dennykorsukewitz'
+          # scope: '@dennykorsukewitz'
       - name: npm install
         run: npm i
       - name: npm clean-install
