@@ -5,4 +5,4 @@ Example:
     yo sublime-package:snippet
 
     This will create:
-        snipptes/SublimePackage.sublime-snippet:                  Snippets are smart templates that will insert text for you, adapting it to their context.
+        snippets/SublimePackage.sublime-snippet:                  Snippets are smart templates that will insert text for you, adapting it to their context.

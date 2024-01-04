@@ -59,7 +59,7 @@ The following files can be created.
 | **project**     | projects/SublimePackage.sublime-projects       | Creates a SublimePackage.sublime-project file to register a collection of files and folders, which are shown in Sidebar. |
 | **readme**      | README.md                                   | A README is often the first item a visitor will see when visiting your repository.|
 | **setting**     | settings/SublimePackage.sublime-settings    | Creates a SublimePackage.sublime-settings file to stores configuration data. |
-| **snippet**     | snipptes/SublimePackage.sublime-snippet     | Snippets are smart templates that will insert text for you, adapting it to their context. |
+| **snippet**     | snippets/SublimePackage.sublime-snippet     | Snippets are smart templates that will insert text for you, adapting it to their context. |
 
 ---
 
@@ -74,6 +74,9 @@ yo sublime-package
 
 # Show all possible generators
 yo sublime-package --generators
+
+# Shows the description of each sub-generator
+yo sublime-package --generator-description
 
 # Run subgenerators directly
 yo sublime-package:SUBGENERATOR
