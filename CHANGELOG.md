@@ -2,6 +2,17 @@
 
 All notable changes to the "Sublime-Package" Generator will be documented in this file.
 
+## [0.0.5]
+
+### Maintenance
+
+Updated README.
+Added gif.
+Updated USAGE's. Removed obsolete 'Variables' in app USAGE.
+
+### New
+Added additional option `generator-description` to shows the description of each sub-generator.
+
 ## [0.0.4]
 
 ### Maintenance

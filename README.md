@@ -16,7 +16,7 @@ So I created this yeoman generator to easily get a Scaffolding for a Sublime pac
 
 | Status |
 | ------ |
-| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/generator-sublime-package/0.0.4/dev)](https://github.com/dennykorsukewitz/generator-sublime-package/compare/0.0.4...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/generator-sublime-package/0.0.5/dev)](https://github.com/dennykorsukewitz/generator-sublime-package/compare/0.0.5...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/generator-sublime-package/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ![sublime-package](doc/images/sublime-package.gif)
 
