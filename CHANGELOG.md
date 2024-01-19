@@ -11,6 +11,7 @@ Added gif.
 Updated USAGE's. Removed obsolete 'Variables' in app USAGE.
 
 ### New
+
 Added additional option `generator-description` to shows the description of each sub-generator.
 
 ## [0.0.4]
