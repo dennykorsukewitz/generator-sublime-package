@@ -7,7 +7,7 @@ All notable changes to the "Sublime-Package" Generator will be documented in thi
 ### Maintenance
 
 Updated README.
-Added gif.
+Added GIF.
 Updated USAGE's. Removed obsolete 'Variables' in app USAGE.
 
 ### New
