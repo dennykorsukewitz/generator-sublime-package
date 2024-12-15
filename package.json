@@ -47,7 +47,7 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "change-case": "^4.1.2",
-    "interpolate-json": "^2.2.2",
+    "interpolate-json": "^3.0.0",
     "yeoman-generator": "^5.7.0",
     "yosay": "^2.0.2"
   },
