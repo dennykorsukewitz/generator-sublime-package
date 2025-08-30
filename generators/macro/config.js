@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Macro',
   description: 'Creates a Default.sublime-macro file. Macros are a basic automation facility comprising sequences of commands.',
   priority: 60,
@@ -14,4 +14,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

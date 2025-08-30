@@ -1,17 +1,16 @@
-'use strict';
 /* eslint no-empty-function: ["error", { "allow": ["methods"] }] */
 
-const Generator = require('yeoman-generator');
-const chalk = require('chalk');
-const yosay = require('yosay');
-const helper = require('./../../src/helper.js');
-const generator_config = require('./config.js');
+import Generator from 'yeoman-generator';
+import chalk from 'chalk';
+import yosay from 'yosay';
+import * as helper from '../../src/helper.js';
+import generator_config from './config.js';
 
 let config = {};
 let answers = {};
 const prompts = [];
 
-module.exports = class extends Generator {
+export default class extends Generator {
 
   // Arguments and options should be defined in the constructor.
   constructor(args, opts) {

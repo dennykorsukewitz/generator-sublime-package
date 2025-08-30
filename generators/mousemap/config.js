@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Mousemap',
   description: 'Creates a Default.sublime-mousemap file, which control what commands are executed when a user performs an action with a mouse.',
   priority: 80,
@@ -30,4 +30,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

@@ -1,13 +1,11 @@
-'use strict';
-
-const shell = require('shelljs');
-const user = require('yeoman-generator/lib/actions/user');
-const chalk = require('chalk');
-const yosay = require('yosay');
-const glob = require('glob');
-const changeCase = require('change-case');
-
-const { interpolation } = require('interpolate-json');
+import shell from 'shelljs';
+import chalk from 'chalk';
+import yosay from 'yosay';
+import glob from 'glob';
+import { capitalCase, pascalCase, snakeCase } from 'change-case';
+import { interpolation } from 'interpolate-json';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 async function InitConfig(Generator, GeneratorConfig) {
 
@@ -43,7 +41,11 @@ async function InitConfig(Generator, GeneratorConfig) {
 
 async function GetGitConfig(Generator, config) {
 
-  config.github_fullname = user.git.name();
+  if (shell.which('git')) {
+    config.github_fullname = shell
+      .exec('git config --get user.name', { silent: true })
+      .stdout.trim();
+  }
 
   if (shell.which('git')) {
     config.github_username = shell
@@ -56,22 +58,24 @@ async function GetGitConfig(Generator, config) {
 
 async function GetsupportedVersions(Generator, config) {
 
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   const files = await glob.sync(__dirname + '/../generators/**/config.js');
 
   const generators_by_versions = {};
 
-  files.forEach(file => {
+  for (const file of files) {
     let pattern = /(app)/i;
     let result = file.match(pattern);
     if (result) {
-      return;
+      continue;
     }
 
     pattern = /generators\/(.*)\/config.js/i;
     result = file.match(pattern);
 
     const generator = result[1];
-    const generator_config = require(file);
+    const generator_config = (await import(file)).default;
 
     Object.keys(generator_config.versions).forEach(version => {
 
@@ -79,7 +83,7 @@ async function GetsupportedVersions(Generator, config) {
         generators_by_versions[version] = [];
       }
 
-      const generator_name = generator_config.name || changeCase.capitalCase(generator);
+      const generator_name = generator_config.name || capitalCase(generator);
 
       let name = generator_name;
       if (Generator.options['generator-description']) {
@@ -100,7 +104,7 @@ async function GetsupportedVersions(Generator, config) {
 
       generators_by_versions[version].push(generator_data);
     });
-  });
+  }
 
   const versions = Object.keys(generators_by_versions);
 
@@ -192,8 +196,8 @@ function SetPackageName(Generator, config) {
 
     if (config && config.package_name) {
 
-      config.package_name_pascal_case = changeCase.pascalCase(config.package_name);
-      config.package_name_snake_case = changeCase.snakeCase(config.package_name);
+      config.package_name_pascal_case = pascalCase(config.package_name);
+      config.package_name_snake_case = snakeCase(config.package_name);
     }
 
     Generator.config.set('package_name_predicted', config.package_name_predicted);
@@ -261,7 +265,7 @@ function End(Generator) {
   return;
 }
 
-module.exports = {
+export {
   Cleanup,
   End,
   GetAvailableGenerators,

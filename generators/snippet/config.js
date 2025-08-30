@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Snippet',
   description: 'Creates a Snippet file. Snippets are smart templates that will insert text for you, adapting it to their context.',
   priority: 110,
@@ -38,4 +38,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

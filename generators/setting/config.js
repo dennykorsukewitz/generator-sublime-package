@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Setting',
   description: 'Creates a SublimePackage.sublime-settings file to stores configuration data.',
   priority: 100,
@@ -14,4 +14,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

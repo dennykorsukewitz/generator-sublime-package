@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Completion',
   description: 'Creates a completions file. Completion files are smart templates that will insert text for you, adapting it to their context.',
   priority: 40,
@@ -50,4 +50,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

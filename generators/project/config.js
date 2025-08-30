@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Project',
   description: 'Creates a SublimePackage.sublime-project file to register a collection of files and folders, which are shown in Sidebar.',
   priority: 90,
@@ -20,4 +20,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Keymap',
   description: 'Creates a Default.sublime-keymap file. Default.sublime-keymap files contain the key bindings (shortcuts) for a command.',
   priority: 50,
@@ -42,4 +42,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

@@ -1,19 +1,22 @@
-'use strict';
 /* eslint no-empty-function: ["error", { "allow": ["methods"] }] */
 
-const Generator = require('yeoman-generator');
-const chalk = require('chalk');
-const yosay = require('yosay');
-const path = require('path');
-const changeCase = require('change-case');
-const helper = require('./../../src/helper.js');
+import Generator from 'yeoman-generator';
+import chalk from 'chalk';
+import yosay from 'yosay';
+import path from 'path';
+import { snakeCase } from 'change-case';
+import * as helper from '../../src/helper.js';
+import generator_config from './config.js';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const generator = path.basename(__dirname);
-const generator_config = require('./config.js');
 
 let config = {};
 let answers = {};
 
-module.exports = class extends Generator {
+export default class extends Generator {
   // initializing - Your initialization methods (checking current project state, getting configs, etc)
   async initializing() {
 
@@ -53,7 +56,7 @@ module.exports = class extends Generator {
       ...answers,
     };
 
-    data.command_name = changeCase.snakeCase(data.command_name);
+    data.command_name = snakeCase(data.command_name);
 
     this.renderTemplate(
       this.templatePath('commands.sublime-commands'),

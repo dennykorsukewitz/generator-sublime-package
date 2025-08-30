@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Menu',
   description: 'Creates a *.sublime-menu file. Define Menubar and various right-click menus. Creates a *.sublime-menu file.',
   priority: 70,
@@ -70,4 +70,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

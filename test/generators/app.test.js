@@ -1,7 +1,5 @@
-'use strict';
-
-const path = require('path');
-const helpers = require('yeoman-test');
+import path from 'path';
+import helpers from 'yeoman-test';
 
 describe('generators:app', () => {
   describe('creates files without existing package', () => {

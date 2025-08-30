@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Command',
   description: 'Creates a SublimePackage.sublime-commands file to register your new command / plugin for the Command Palette.',
   priority: 30,
@@ -26,4 +26,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

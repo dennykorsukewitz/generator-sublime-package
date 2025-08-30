@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'Plugin',
   description: 'Creates a new SublimePackage.py file to build your own feature.',
   priority: 20,
@@ -45,4 +45,3 @@ const config = {
     },
   ],
 };
-module.exports = config;

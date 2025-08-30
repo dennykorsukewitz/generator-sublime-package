@@ -1,4 +1,4 @@
-const config = {
+export default {
   name: 'README.md',
   description: 'Creates a README.md',
   priority: 10,
@@ -7,4 +7,3 @@ const config = {
   },
   prompts: [],
 };
-module.exports = config;

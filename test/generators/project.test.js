@@ -1,5 +1,5 @@
-const path = require('path');
-const helpers = require('yeoman-test');
+import path from 'path';
+import helpers from 'yeoman-test';
 
 describe('generators:project', () => {
   describe('creates files', () => {
