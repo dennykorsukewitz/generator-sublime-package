@@ -1,5 +1,5 @@
 {
-  "name": "@dennykorsukewitz/generator-sublime-package",
+  "name": "generator-sublime-package",
   "version": "0.1.0",
   "description": "Sublime-Package is a Yeoman GENERATOR, which creates scaffolding for a Sublime-Packages.",
   "homepage": "https://github.com/dennykorsukewitz/generator-sublime-package",
