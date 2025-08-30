@@ -25,7 +25,7 @@ jobs:
         run: npm i
       - name: npm clean-install
         run: npm ci
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PAT }}
 
@@ -49,13 +49,11 @@ jobs:
 
           # Defaults to the user or organization that owns the workflow file
           scope: '@dennykorsukewitz'
-      - name: Run github.cjs - Update package.json with the updated name
-        run: node .github/workflows/release/github.cjs
       - name: npm install
         run: npm i
       - name: npm clean-install
         run: npm ci
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
