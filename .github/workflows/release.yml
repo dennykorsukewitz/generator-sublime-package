@@ -49,6 +49,8 @@ jobs:
 
           # Defaults to the user or organization that owns the workflow file
           scope: '@dennykorsukewitz'
+      - name: Run github.cjs - Update package.json with the updated name
+        run: node .github/workflows/release/github.cjs
       - name: npm install
         run: npm i
       - name: npm clean-install
