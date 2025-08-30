@@ -19,7 +19,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - name: npm install
         run: npm i
@@ -44,13 +44,13 @@ jobs:
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '18.x'
           registry-url: 'https://npm.pkg.github.com'
 
           # Defaults to the user or organization that owns the workflow file
           scope: '@dennykorsukewitz'
-      - name: Run github.js - Update package.json with the updated name
-        run: node .github/workflows/release/github.js
+      - name: Run github.cjs - Update package.json with the updated name
+        run: node .github/workflows/release/github.cjs
       - name: npm install
         run: npm i
       - name: npm clean-install
