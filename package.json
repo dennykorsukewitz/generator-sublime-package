@@ -62,7 +62,7 @@
     "prettier": "^3.6.2",
     "yeoman-assert": "^3.1.1",
     "yeoman-environment": "^6.0.0",
-    "yeoman-test": "^10.0.1"
+    "yeoman-test": "^11.0.0"
   },
   "type": "module",
   "engines": {
