@@ -107,7 +107,7 @@ yo sublime-package:snippet
 
 `generator-sublime-package` uses Node.js as runtime environment.
 
-[![Node.js](https://img.shields.io/badge/nodejs-16.13.0-blue.svg?logo=github)](https://github.com/nodejs/node)
+[![Node.js](https://img.shields.io/badge/nodejs-%3E%3D20.12.0-blue.svg?logo=github)](https://github.com/nodejs/node)
 
 Install [Node](https://nodejs.org/en/download/)
 

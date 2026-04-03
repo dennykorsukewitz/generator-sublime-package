@@ -69,7 +69,7 @@
   "type": "module",
   "engines": {
     "npm": ">= 4.0.0",
-    "node": ">=16.0.0"
+    "node": ">=20.12.0"
   },
   "lint-staged": {
     "*.js": [
