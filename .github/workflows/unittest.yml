@@ -6,7 +6,7 @@ on:
     types:
       - published
   push:
-    branches: ["dev", "dev-update", "dev-update*", ]
+    # branches: ["dev", "dev-update", "dev-update*", ]
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
