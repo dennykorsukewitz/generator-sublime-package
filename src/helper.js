@@ -1,7 +1,7 @@
 import shell from 'shelljs';
 import chalk from 'chalk';
 import yosay from 'yosay';
-import glob from 'glob';
+import { glob } from 'glob';
 import { capitalCase, pascalCase, snakeCase } from 'change-case';
 import { interpolation } from 'interpolate-json';
 import { fileURLToPath } from 'url';

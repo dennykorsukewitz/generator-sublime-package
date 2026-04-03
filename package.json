@@ -53,6 +53,8 @@
     "yosay": "^3.0.0"
   },
   "devDependencies": {
+    "@yeoman/adapter": "^4.0.2",
+    "@yeoman/types": "^1.10.3",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-xo": "^0.49.0",
