@@ -2,7 +2,14 @@
 
 All notable changes to the "Sublime-Package" Generator will be documented in this file.
 
-## [Unreleased]
+## [1.0.0]
+
+Breaking change: requires **Node.js >= 20.12.0** (aligned with current Yeoman stack and `util.styleText`).
+
+### Changed
+
+- Raise `engines.node` to `>=20.12.0`; run CI and releases on Node 20
+- Import `glob` as a named export for compatibility with `glob` v10
 
 ### Dependencies
 
@@ -19,6 +26,7 @@ All notable changes to the "Sublime-Package" Generator will be documented in thi
 - Bump `prettier` from 1.19.1 to 3.6.2 (#18)
 - Bump `eslint-plugin-prettier` from 3.4.1 to 5.5.4 (#20)
 - Bump `eslint-config-prettier` from 6.6.0 to 10.1.8 (#21)
+- Add devDependencies `@yeoman/adapter`, `@yeoman/types` for `yeoman-test` 11
 
 ## [0.1.0]
 

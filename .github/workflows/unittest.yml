@@ -6,7 +6,7 @@ on:
     types:
       - published
   push:
-    branches: ["dev", "dev-update", "dev-update*", ]
+    # branches: ["dev", "dev-update", "dev-update*", ]
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
@@ -19,8 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '20'
       - name: Install dependencies
         run: |
           npm install
@@ -37,8 +36,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '20'
       - name: Install dependencies
         run: |
           npm install
@@ -59,8 +57,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '20'
       - name: Install dependencies
         run: npm install
       - name: Set git config

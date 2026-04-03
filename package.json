@@ -1,6 +1,6 @@
 {
   "name": "generator-sublime-package",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Sublime-Package is a Yeoman GENERATOR, which creates scaffolding for a Sublime-Packages.",
   "homepage": "https://github.com/dennykorsukewitz/generator-sublime-package",
   "author": {
@@ -53,6 +53,8 @@
     "yosay": "^3.0.0"
   },
   "devDependencies": {
+    "@yeoman/adapter": "^4.0.2",
+    "@yeoman/types": "^1.10.3",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-xo": "^0.49.0",
@@ -67,7 +69,7 @@
   "type": "module",
   "engines": {
     "npm": ">= 4.0.0",
-    "node": ">=16.0.0"
+    "node": ">=20.12.0"
   },
   "lint-staged": {
     "*.js": [
