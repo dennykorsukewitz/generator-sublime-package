@@ -2,6 +2,24 @@
 
 All notable changes to the "Sublime-Package" Generator will be documented in this file.
 
+## [Unreleased]
+
+### Dependencies
+
+- Bump `eslint` from 9.34.0 to 9.36.0 (#24)
+- Bump `chalk` from 5.6.0 to 5.6.2 (#25)
+- Bump `yeoman-test` from 10.1.1 to 11.0.0 (#26)
+- Bump `jest` from 29.7.0 to 30.2.0 (#27)
+- Bump `lint-staged` from 15.2.11 to 16.2.3 (#22, #28)
+- Bump `js-yaml` from 3.14.1 to 3.14.2 (#30)
+- Bump `lodash-es` from 4.17.21 to 4.17.23 (#34)
+- Bump `simple-git` from 3.28.0 to 3.33.0 (#40)
+- Bump `yeoman-environment` from 4.4.3 to 6.0.0 and refresh transitive `tar` (#41)
+- Bump `minimatch` from 3.1.2 to 3.1.5 (#42)
+- Bump `prettier` from 1.19.1 to 3.6.2 (#18)
+- Bump `eslint-plugin-prettier` from 3.4.1 to 5.5.4 (#20)
+- Bump `eslint-config-prettier` from 6.6.0 to 10.1.8 (#21)
+
 ## [0.1.0]
 
 Breaking Change: Requires Node.js >=16.0.0 with ES module support
