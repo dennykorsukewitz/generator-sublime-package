@@ -49,7 +49,7 @@
     "change-case": "^5.4.4",
     "interpolate-json": "^3.0.0",
     "shelljs": "^0.10.0",
-    "yeoman-generator": "^7.5.1",
+    "yeoman-generator": "^8.2.2",
     "yosay": "^3.0.0"
   },
   "devDependencies": {
